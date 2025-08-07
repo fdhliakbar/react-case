@@ -1,6 +1,6 @@
 import './index.css'
 import React from 'react'
-
+import Button from './components/Elements/Button/'
 // class Button extends React.Component {
 //   render() {
 //     return (
@@ -21,15 +21,6 @@ import React from 'react'
 //   );
 // }
 
-const Button = (props) => {
-  const { children = "...", variant = "bg-black" } = props;
-  return (
-    <button className={`h-10 px-6 font-semibold rounded-md ${variant} text-white`}
-      type='submit'>
-      {children || 'Buy Now'}
-    </button>
-  )
-}
 
 function App() {
 
